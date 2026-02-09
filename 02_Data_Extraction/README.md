@@ -122,6 +122,9 @@ kernel_mask_dil: **ksize = 8**, i = 4
 **wing_labeled_mask, num = pcv.create_labels(mask=wing_mask, rois=rois)**
 
 **Added morphological, spectral, and HSV data extraction steps for seed, wing, and kernel towards the end:**
-**X_shape_img = pcv.analyze.size(img=img.pseudo_rgb, labeled_mask=X_mask, n_labels=num, label="X")
-X_hsv_img = pcv.analyze.color(rgb_img=img.pseudo_rgb, labeled_mask=X_mask, n_labels=num, label="X")
-X_analysis_img = pcv.analyze.spectral_reflectance(hsi=img, labeled_mask=X_mask, n_labels=num, label='X')**
+
+**X_shape_img = pcv.analyze.size(img=img.pseudo_rgb, labeled_mask=X_mask, n_labels=num, label="X")**
+
+**X_hsv_img = pcv.analyze.color(rgb_img=img.pseudo_rgb, labeled_mask=X_mask, n_labels=num, label="X")**
+
+**X_analysis_img = pcv.analyze.spectral_reflectance(hsi=img, labeled_mask=X_mask, n_labels=num, label='X')**
