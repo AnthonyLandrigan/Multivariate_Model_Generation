@@ -10,8 +10,8 @@ Response variable: The ability of a relationship matrix in a phenomic selection 
 
 # Update #2
 
-My data has 8 columns, 57,096 rows, and 30 unique traits. These numbers are consistent between data files.
+My data has 8 columns, 57,096 rows, and 30 unique traits prior to cleaning. These numbers are consistent between data files.
+
 My data files are dataframes. All columns have a 'Character' data type, aside from the 'value' column, whose data type is 'Numeric'.
-I generated figures with ggplot to see how my mean reflectance data is distributed between tissues (whole seed, wing, and kernel).
-Across all tissues, the mean reflectance increased as wavelengths got longer.
-The mean reflectance in the wing tissue increased the most as the wavelengths got longer, and the mean reflectance of the kernel tissue increased the least. The mean reflectance of the whole seed tissue was between the kernel or wing in terms of increase.
+
+I generated figures with ggplot to see how my mean reflectance data is distributed between tissues (whole seed, wing, and kernel). Across all tissues, the mean reflectance increased as wavelengths got longer. The mean reflectance in the wing tissue increased the most as the wavelengths got longer, and the mean reflectance of the kernel tissue increased the least. The mean reflectance of the whole seed tissue was between the kernel or wing in terms of increase.
