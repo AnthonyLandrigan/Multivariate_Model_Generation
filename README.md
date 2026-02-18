@@ -29,4 +29,4 @@ The family the seeds come from (grandmother, mother)
 
 **3. Do you expect random effects to change intercepts or slopes of the relationship between x and y?**
 
-If we see differences in germination taits between families, then we would expect to see change in the slope of our data. Families that have higher germination rates would have greater y-intercepts, and families with lower germination would have lower y-intercepts.
+If we see differences in germination traits between families, then we would expect to see change in the slope of our data. Families that have higher germination rates would have greater y-intercepts, and families with lower germination would have lower y-intercepts.
