@@ -17,7 +17,7 @@ My data files are dataframes. All columns have a 'Character' data type, aside fr
 
 I generated figures with ggplot to see how my mean reflectance data is distributed between tissues (whole seed, wing, and kernel). Across all tissues, the mean reflectance increased as wavelengths got longer. The mean reflectance in the wing tissue increased the most as the wavelengths got longer, and the mean reflectance of the kernel tissue increased the least. The mean reflectance of the whole seed tissue was between the kernel or wing in terms of increase.
 
-# Activity 2/18/26
+# Activity & Exercise 2/18/26
 
 **1. What might be the fixed effects on your model?**
 
@@ -30,3 +30,9 @@ The family the seeds come from (grandmother, mother)
 **3. Do you expect random effects to change intercepts or slopes of the relationship between x and y?**
 
 If we see differences in germination traits between families, then we would expect to see change in the slope of our data. Families that have higher germination rates would have greater y-intercepts, and families with lower germination would have lower y-intercepts.
+
+**1. Data Type:** Continuous numeric
+
+**2. Constant Variance?** No
+
+**3. Distribution and link function:** Poisson, log link
