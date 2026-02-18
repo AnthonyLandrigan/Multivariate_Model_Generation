@@ -1,4 +1,4 @@
-The code within this folder is the data extraction pipeline for our multispectral images.
+# The code within this folder is the data extraction pipeline for our multispectral images.
 
 **Image_Analysis_Workflow:**
 
