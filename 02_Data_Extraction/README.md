@@ -8,7 +8,7 @@ This script was written with the assistance of Noah Fahlgren of the Donald Danfo
 
 This function loops through all plates, extracts data from the achene, achene wing, and kernel structures, and save output images of each structure. The parameters we've used so far are listed below. See Plates_Run.csv to see which plates were properly processed by which set of parameters. Bold values are changed or added between runs. Work in progress.
 
-**Run 1:**
+# Run 1:
 
 colorspace = HSV, channel = h
 
@@ -26,7 +26,7 @@ kernel_mask_clean: size = 2500
 
 kernel_mask_dil: ksize = 3, i = 1
 
-**Run 2:**
+# Run 2:
 
 colorspace = HSV, channel = h
 
@@ -44,7 +44,7 @@ kernel_mask_clean: size = 2500
 
 kernel_mask_dil: ksize = 3, i = 1
 
-**Run 3:**
+# Run 3:
 
 colorspace = HSV, channel = h
 
@@ -62,7 +62,7 @@ kernel_mask_clean: size = 2500
 
 kernel_mask_dil: ksize = 3, i = 1
 
-**Run 4:**
+# Run 4:
 
 colorspace = HSV, channel = h
 
@@ -86,7 +86,7 @@ kernel_mask_clean: **size = 2900**
 
 kernel_mask_dil: ksize = 3, i = 1
 
-**Run 5:**
+# Run 5:
 
 colorspace = HSV, channel = h
 
@@ -126,7 +126,7 @@ kernel_mask_dil: ksize = 4, i = 4
 
 **X_analysis_img = pcv.analyze.spectral_reflectance(hsi=img, labeled_mask=X_mask, n_labels=num, label='X')**
 
-**Run 6:**
+# Run 6:
 
 colorspace = HSV, **channel = v**
 
@@ -150,7 +150,7 @@ kernel_mask_clean: size = 2900
 
 kernel_mask_dil: **ksize = 10, i = 5**
 
-**Run 7:**
+# Run 7:
 
 colorspace = HSV, **channel = h**
 
