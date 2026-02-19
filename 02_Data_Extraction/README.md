@@ -84,7 +84,7 @@ kernel_err: **ksize = 4, i = 5**
 
 kernel_mask_clean: **size = 2900**
 
-kernel_mask_dil: **ksize = 4, i = 4**
+kernel_mask_dil: ksize = 3, i = 1
 
 **Run 5:**
 
@@ -105,14 +105,11 @@ wing_mask_dil: **ksize = 4, i = 2**
 
 wing_mask_clean: size = 2500
 
-**kernel mask now created from wing_mask_clean:**
-**kernel_mask = flt_mask - wing_mask_clean**
-
-kernel_err: **ksize = 10**, i = 5
+kernel_err: ksize = 4, i = 5
 
 kernel_mask_clean: size = 2900
 
-kernel_mask_dil: **ksize = 8**, i = 4
+kernel_mask_dil: ksize = 4, i = 4
 
 **NEW: kernel_mask_fill = pcv.fill_holes(bin_img=kernel_mask_dil)**
 
@@ -128,3 +125,53 @@ kernel_mask_dil: **ksize = 8**, i = 4
 **X_hsv_img = pcv.analyze.color(rgb_img=img.pseudo_rgb, labeled_mask=X_mask, n_labels=num, label="X")**
 
 **X_analysis_img = pcv.analyze.spectral_reflectance(hsi=img, labeled_mask=X_mask, n_labels=num, label='X')**
+
+**Run 6:**
+
+colorspace = HSV, **channel = v**
+
+c_thresh: **object_type = light**
+
+roi rectangle: x = 277, y = 100, **h = 2500, w = 3500**
+
+a_fill_img: **size = 20000**
+
+wing_mask: threshold = 40, object_type = Light
+
+wing_err: ksize = 4, i = 5
+
+wing_mask_dil: ksize = 4, i = 2
+
+wing_mask_clean: size = 2500
+
+kernel_err: **ksize = 10,** i = 5
+
+kernel_mask_clean: size = 2900
+
+kernel_mask_dil: **ksize = 10, i = 5**
+
+**Run 7:**
+
+colorspace = HSV, **channel = h**
+
+c_thresh: **object_type = dark**
+
+roi rectangle: x = 277, y = 100, **h = 2700, w = 3750**
+
+a_fill_img: size = 20000
+
+wing_mask: **threshold = 38**, object_type = Light
+
+wing_err: ksize = 4, i = 5
+
+wing_mask_dil: ksize = 4, i = 2
+
+wing_mask_clean: size = 2500
+
+kernel_err: ksize = 10, i = 5
+
+kernel_mask_clean: **size = 2500**
+
+kernel_mask_dil: ksize = 10, i = 5
+
+**NEW: kernel_mask now made from 'wing_mask_clean', rather than 'wing_mask' - Was supposed to be changed on Run 5, but parameter was never changed** 
